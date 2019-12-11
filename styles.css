@@ -1,0 +1,351 @@
+.scroll-bar {
+	 height: 5px;
+	 width: 10px;
+	 background-color: #2c186d;
+	 position: fixed;
+	 z-index: 99999;
+}
+ header {
+	 width: 100%;
+	 height: 90px;
+	 position: fixed;
+	 top: 0;
+	 background-color: #060018;
+	 color: #eee6ab;
+}
+ .content {
+	 width: 100%;
+	 height: 130vh;
+	 position: fixed;
+	 top: 90px;
+	 margin: 0;
+	 padding: 0;
+	 color: #eee6ab;
+}
+ @media (min-width: 768px) {
+	 .content {
+		 height: 100%;
+	}
+}
+ * {
+	 box-sizing: border-box;
+}
+ html {
+	 font-family: 'Source Sans Pro', sans-serif;
+}
+ body {
+	 background-color: #060113;
+	 margin: 0;
+	 padding: 0;
+}
+ a {
+	 text-decoration: none;
+	 color: #eee6ab;
+}
+ h1 {
+	 margin: 20px 10px 10px 50px;
+}
+ @media (min-width: 768px) {
+	 h1 {
+		 margin: 50px;
+	}
+}
+ #skills, #education {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 color: #c5bc8e;
+	 top: 100%;
+}
+ #skills h1, #education h1 {
+	 color: #c5bc8e;
+}
+ #skills h1 p, #education h1 p {
+	 padding: 0 10px;
+	 display: inline-block;
+	 margin: 0;
+}
+ #skills p {
+	 position: absolute;
+}
+ @media (min-width: 768px) {
+	 #skills p[data-200] {
+		 left: 35% !important;
+	}
+}
+ #employment {
+	 height: 100vh;
+}
+ #interests {
+	 background-color: #060018;
+	 position: relative;
+}
+ #interests #toTop {
+	 display: flex;
+	 cursor: pointer;
+	 justify-content: center;
+	 align-content: center;
+	 height: 33px;
+	 width: 33px;
+	 padding: 2px;
+	 border-radius: 6px;
+	 background: #413875 61;
+	 color: #676caf;
+	 border: 1px solid #676caf;
+	 font-weight: bold;
+	 font-size: 1.7em;
+	 position: relative;
+	 bottom: 0;
+	 left: 91.7%;
+}
+ #employment, #interests {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 top: 100%;
+}
+ #employment h1, #interests h1 {
+	 color: #c5bc8e;
+}
+ @media (min-width: 768px) {
+	 #employment h1, #interests h1 {
+		 margin: 20px;
+	}
+}
+ #employment h1 p, #interests h1 p {
+	 display: inline-block;
+	 padding: 0;
+	 margin: 15px 10px 10px 0;
+}
+ @media (min-width: 768px) {
+	 #employment h1 p, #interests h1 p {
+		 padding: 0 10px;
+		 margin: unset;
+	}
+}
+ #education {
+	 background-color: #251d3d;
+}
+ .name {
+	 padding: 20px 10px 10px 30px;
+	 font-size: 1.9em;
+	 display: flex;
+	 justify-content: start;
+}
+ @media (min-width: 360px) {
+	 .name {
+		 justify-content: center;
+		 padding: 14px 0;
+	}
+}
+ @media (min-width: 768px) {
+	 .name {
+		 font-size: 2.5em;
+	}
+}
+ .personal-data {
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: flex-start;
+	 padding: 30px 0;
+}
+ @media (min-width: 360px) {
+	 .personal-data {
+		 padding: 50px 29px;
+	}
+}
+ @media (min-width: 410px) {
+	 .personal-data {
+		 padding: 60px 50px;
+	}
+}
+ .job-role {
+	 margin-top: -19px;
+	 display: flex;
+	 justify-content: center;
+	 font-size: 1.6em;
+	 font-weight: bold;
+	 z-index: 99999999;
+	 position: relative;
+	 color: #a49bc4;
+}
+ .info {
+	 margin: 15px 20px;
+	 color: #eee6ab;
+}
+ @media (min-width: 410px) {
+	 .info {
+		 margin: 20px;
+	}
+}
+ .fa-envelope:before {
+	 font-size: 0.85em;
+}
+ .info div {
+	 display: inline-block;
+	 margin-left: 6px;
+	 text-align: left;
+	 color: #a49bc4;
+	 font-size: 0.98em;
+	 font-weight: bold;
+}
+ .info div a {
+	 color: inherit;
+}
+ section {
+	 position: relative;
+}
+ .downArrow {
+	 position: absolute;
+	 top: 70vh;
+	 text-align: center;
+	 left: 0;
+	 right: 0;
+	 display: block;
+}
+ .downArrow span {
+	 position: absolute;
+	 bottom: 5%;
+	 left: 50%;
+	 width: 24px;
+	 height: 24px;
+	 margin-left: -12px;
+	 border-left: 1px solid #fff;
+	 border-bottom: 1px solid #fff;
+	 -webkit-transform: rotate(-45deg);
+	 transform: rotate(-45deg);
+	 -webkit-animation: arrowanim 1.5s infinite;
+	 animation: arrowanim 1.5s infinite;
+	 box-sizing: border-box;
+}
+ @-webkit-keyframes arrowanim {
+	 0% {
+		 -webkit-transform: rotate(-45deg) translate(0, 0);
+		 opacity: 0;
+	}
+	 50% {
+		 opacity: 1;
+	}
+	 100% {
+		 -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+		 opacity: 0;
+	}
+}
+ @keyframes arrowanim {
+	 0% {
+		 transform: rotate(-45deg) translate(0, 0);
+		 opacity: 0;
+	}
+	 50% {
+		 opacity: 1;
+	}
+	 100% {
+		 transform: rotate(-45deg) translate(-10px, 10px);
+		 opacity: 0;
+	}
+}
+ .skilllist {
+	 width: 75%;
+	 max-width: 500px;
+	 margin: 20px 50px;
+}
+ @media (min-width: 360px) {
+	 .skilllist {
+		 margin: 50px;
+	}
+}
+ .skill {
+	 width: 0;
+	 margin: 5px;
+	 background-color: #6a608c;
+	 border-radius: 20px;
+	 max-height: 40px;
+	 white-space: nowrap;
+}
+ .skill .skillname {
+	 padding: 1px;
+	 padding-right: 8px;
+	 text-align: right;
+	 font-weight: bold;
+	 color: #13014a;
+}
+ @media (min-width: 768px) {
+	 .skill .skillname {
+		 padding: 12px;
+	}
+}
+ .job {
+	 margin-left: 50px;
+	 color: #d3a89c;
+}
+ .job:not(:first-of-type) {
+	 margin: 18px 50px;
+}
+ .job .jobt {
+	 font-size: 1.2em;
+	 color: #eee6ab;
+}
+ .job .company {
+	 font-size: 1.3em;
+	 color: #461da5;
+}
+ .job .dates {
+	 font-size: 1em;
+}
+ .qualification {
+	 margin: 60px 50px;
+	 color: #c5bc8e;
+}
+ .qualification .qual {
+	 font-size: 1.2em;
+	 color: #eee6ab;
+}
+ .qualification .institute, .qualification .dates {
+	 margin-top: 10px;
+	 margin-right: 20px;
+	 font-size: 1.1em;
+	 color: #7858c4;
+}
+ .qualification .dates {
+	 color: #461da5;
+}
+ .interestlist {
+	 display: flex;
+	 flex-wrap: wrap;
+	 flex-direction: row;
+	 justify-content: space-around;
+}
+ @media (min-width: 1024px) {
+	 .interestlist {
+		 max-width: 750px;
+		 margin: 0 auto;
+	}
+}
+ .interest {
+	 width: 170px;
+	 display: inline-block;
+	 color: #676caf;
+	 text-align: center;
+	 border: 1.5px solid;
+	 border-radius: 20px;
+	 padding: 0;
+	 margin: 0 0 30px 0;
+}
+ @media (min-width: 696px) {
+	 .interest {
+		 margin: 30px;
+	}
+}
+ .interest img {
+	 max-width: 80px;
+	 margin-top: 14px;
+	 margin-bottom: -18px;
+}
+ .interest i {
+	 font-size: 3em;
+}
+ .interest p {
+	 font-size: 1.5em;
+}
+ 
