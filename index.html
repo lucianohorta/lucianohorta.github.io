@@ -2,14 +2,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Luciano Horta - CV</title>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Luciano Horta - CV</title>
+
+  <!-- Fonts-Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Styles.css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled Bootstrap JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
  
 <body> 
    
@@ -24,28 +35,34 @@
     
     <div class="job-role" data-0="opacity:0.7;" data-190="opacity:0.5" data-500="opacity:0">Front-End Developer</div>
     
-    <div class="personal-data">     
-      <div class="info" data-0="opacity:1" data-200="opacity:0"><a href="https://www.linkedin.com/in/luciano-horta-b15395192" target="_blank">
-        <i class="fa fa-linkedin fa-2x fa-fw" aria-hidden="true"></i>       <div class="linkedin">My Linkedin</div></a>   
-      </div> 
-      <div class="info" data-0="opacity:1" data-200="opacity:0"><a href="mailto:lucianohortasantos@gmail.com">
-        <i class="fa fa-envelope fa-2x fa-fw"></i>    <div class="email">lucianohortasantos@gmail.com</div></a>   
-      </div>
-      <div class="info" data-0="opacity:1" data-200="opacity:0">
-        <i class="fa fa-phone fa-2x fa-fw"></i>   <div class="telephone"><a href="tel:55021983919087">+55 021 98391 9087</a></div>
-      </div> 
-      <div class="info" data-0="opacity:1" data-200="opacity:0"><a href="//www.lucianohorta.com" target="_blank">
-        <i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>    <div class="website">lucianohorta.com</div></a>
-      </div>
+    <div class="personal-data container">
+			
+			<div class="row">
+				<div class="info col-sm-12 col-md-6" data-0="opacity:1" data-200="opacity:0"><a href="https://www.linkedin.com/in/luciano-horta-b15395192" target="_blank">
+					<i class="fa fa-linkedin fa-2x fa-fw" aria-hidden="true"></i>       <div class="linkedin">My Linkedin</div></a>   
+				</div> 
+				<div class="info col-sm-12 col-md-6" data-0="opacity:1" data-200="opacity:0"><a href="mailto:lucianohortasantos@gmail.com">
+					<i class="fa fa-envelope fa-2x fa-fw"></i>    <div class="email">lucianohortasantos@gmail.com</div></a>   
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="info col-sm-12 col-md-6" data-0="opacity:1" data-200="opacity:0">
+					<i class="fa fa-phone fa-2x fa-fw"></i>   <div class="telephone"><a href="tel:55021983919087">+55 021 98391 9087</a></div>
+				</div> 
+				<div class="info col-sm-12 col-md-6" data-0="opacity:1" data-200="opacity:0"><a href="//www.lucianohorta.com" target="_blank">
+					<i class="fa fa-home fa-2x fa-fw" aria-hidden="true"></i>    <div class="website">lucianohorta.com</div></a>
+				</div>
+			</div>
 
-    </div> <!-- /content -->
+    </div> <!-- /container -->
 
     <a href="#skills" class="downArrow">
       <span></span>
     </a> 
 
     <section id="skills" data-0="top:100%; background-color:rgb(19,1,44)" data-top="top:0%; background-color:rgb(19,1,74)">
-      <div class="skillstitle" data-200="top:10%; opacity: 0" data-750="top:0; opacity: 1">
+      <div class="skillstitle" data-200="top:10%; opacity: 0" data-1000="top:0; opacity: 1">
         <h1>  <i class="fa fa-code fa-fw"></i>    
           <p>Skills</p>      
         </h1> 
@@ -93,11 +110,11 @@
     </section>
 
 
-    <section id="employment" data-850="top:100%; background-color: rgb(31, 3, 124)" data-1800="top:0%; background-color: rgb(8, 4, 21)">
+    <section id="employment" data-1100="top:100%; background-color: rgb(31, 3, 124)" data-1800="top:0%; background-color: rgb(8, 4, 21)">
       <h1><i class="fa fa-briefcase fa-fw"></i>
         <p>Employment</p>
       </h1>
-      <div class="job" data-950="opacity:0.5" data-1300="opacity:1">
+      <div class="job" data-1100="opacity:0.5" data-1300="opacity:1">
         <div class="jobt">Sr. Front-End Developer</div>
         <div class="company">e-Can Digital Performance </div>
         <div class="companysite"> <a href="//www.agenciaecan.com.br">agenciaecan.com.br</a></div>
@@ -186,7 +203,7 @@
   
 
 
-  </div>
+  </div> <!-- content -->
     
 
 
