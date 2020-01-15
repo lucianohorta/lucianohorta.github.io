@@ -14,19 +14,23 @@ $(document).ready(function() {
  
   
   // scroll indicator:
-  
-  $(window).on('scroll', function() {
 
-    var docHeight = $(document).height(),
-        winHeight = $(window).height();
+var winHeight = $(window).height(), 
+      docHeight = $(document).height(),
+      progressBar = $('progress'),
+      max, value;
 
-    var viewport = docHeight - winHeight,
-        positionY = $(window).scrollTop();
+  /* Set the max scrollable area */
+  max = docHeight - winHeight;
+  progressBar.attr('max', max);
 
-    var indicator = ( positionY / (viewport)) * 100;
-
-    $('.scroll-bar').css('width', indicator + '%');
+  $(document).on('scroll', function(){
+     value = $(window).scrollTop();
+     progressBar.attr('value', value);
   });
+
+
+
 
     
 // click toTop button goes up!
