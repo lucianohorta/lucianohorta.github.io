@@ -12,17 +12,20 @@ $(document).ready(function() {
 
   });
  
-  
+  // --------------------------------------------
+
   // scroll indicator:
 
-var winHeight = $(window).height(), 
+  var winHeight = $('.content').height(), 
       docHeight = $(document).height(),
       progressBar = $('progress'),
       max, value;
 
   /* Set the max scrollable area */
   max = docHeight - winHeight;
+
   progressBar.attr('max', max);
+
 
   $(document).on('scroll', function(){
      value = $(window).scrollTop();
@@ -30,8 +33,7 @@ var winHeight = $(window).height(),
   });
 
 
-
-
+// --------------------------------------------
     
 // click toTop button goes up!
   
