@@ -3,7 +3,7 @@ $(document).ready(function() {
  
   // Click scroll to next div #:
   
-  $(".downArrow").find("a").attr('href').on('click', function(e) {
+  $(".downArrow").find("a").attr('href').click(function(e){
     e.preventDefault();
 
     $('html, body').animate({ 
