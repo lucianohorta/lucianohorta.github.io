@@ -42,6 +42,7 @@ header {
 	padding: 0;
 	color: #eee6ab;
 	margin-top: 8px;
+	touch-action: pan-y;
 }
 @media (min-width: 767px) {
 	.content {
