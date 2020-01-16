@@ -60,10 +60,6 @@ header {
 		padding-bottom: 60px;
 		margin-top: -30px !important;
 	}
-	.downArrow {
-		top: 36vh !important;
-	    left: -33px !important;
-	}
 	.fa-2x {
 		font-size: 3.2em;
 		top: 10px;
@@ -80,6 +76,19 @@ header {
 		top: 10px;
 		margin-bottom: 30px;
 		position: relative;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+	#personal > a span {
+		bottom: 26vh !important;
+		margin-left: -28px !important;
+	}
+	.col-md-6 {
+		margin-top: -20px !important;
+	}
+	.personal-data {
+		padding-top: 120px !important;
 	}
 }
 
@@ -121,11 +130,19 @@ h1 {
 #skills h1 p, #education h1 p {
 	padding: 0 10px;
 	display: inline-block;
+	margin: 0 !important;
+}
+#skills .skillstitle { 
+	display: flex;
+    justify-content: flex-start;
+    margin-left: 56px;
+    margin-top: 15px;
+}
+#skills h1 {
 	margin: 0;
+    margin-bottom: -22px;
 }
-#skills p {
-	position: absolute;
-}
+
 @media (min-width: 768px) {
 	#skills p[data-200] {
 		left: 35% !important;
@@ -145,8 +162,8 @@ h1 {
 	align-content: center;
 	height: 33px;
 	width: 33px;
-	padding: 22px;
-	border-radius: 6px;
+    padding: 20px;
+    border-radius: 40px;
 	background: #41387561;
 	color: #676caf;
 	border: 1px solid #676caf;
@@ -154,12 +171,13 @@ h1 {
 	margin: 0 auto;
 }
 #interests #toTop::before {
-	content: '^';
-	display: block;
-	font-weight: bold;
-	font-size: 1.7em;
-	position: absolute;
-    top: 5px;
+    content: '^';
+    display: block;
+    font-weight: bold;
+    font-size: 1.7em;
+    position: absolute;
+    top: 1px;
+    left: 11px;
 }
 #employment, #interests {
 	width: 100%;
@@ -175,14 +193,19 @@ h1 {
 		margin: 20px;
 	}
 }
-#employment h1 p, #interests h1 p {
+#employment h1 p, 
+#interests h1 p, 
+#skills h1 p, 
+#education h1 p {
 	display: inline-block;
 	padding: 0;
-	margin: 15px 10px 10px 0;
-	font-size: .75em;
+	/* margin: 15px 10px 10px 0; */
+	font-size: .75em !important;
+    text-align: center;
 }
 @media (min-width: 768px) {
-	#employment h1 p, #interests h1 p {
+	#employment h1 p, 
+	#interests h1 p {
 		padding: 0 10px;
 		margin: unset;
 		font-size: 1em;
@@ -191,9 +214,17 @@ h1 {
 #education {
 	background-color: #251d3d;
 }
+
+#education h1 {
+	text-align: center;
+	margin: 0;
+	margin-left: -118px;
+	margin-top: 20px;
+}
+
 .name {
 	padding: 20px 10px 0 70px;
-	font-size: 1.9em;
+	font-size: 1.7em;
 	display: flex;
 	justify-content: start;
 	/* background-color: rgba(0, 0, 0, 0.5);
@@ -257,11 +288,61 @@ h1 {
 		padding: 60px 50px;
 	}
 }
+@media (min-width: 375px) and (max-width: 414px) {
+	.interestlist {
+		justify-content: center !important;
+	}
+	.interest:nth-child(odd) {
+		margin-left: 0px !important;
+		margin-right: 12px !important;
+	}
+}
+@media (min-width: 409px) and (max-width: 414px) { /* phablets */
+	.job {
+		margin-top: 30px !important;
+		margin-left: 60px !important;
+	}
+	.qualification {
+		margin-left: 48px !important;
+	}
+	#education h1 {
+		margin-left: -134px !important;
+	}
+	.interestlist {
+		margin-top: 20px !important;
+	}
+	#interests h1 {
+		margin-top: 0 !important;
+	}
+	#interests #toTop {
+		margin: 30px auto !important;
+	}
+}
+
+/* iPhone X */
+@media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+	h1 {
+		margin-top: 20px !important;
+		margin-bottom: 30px !important;
+	}
+	#skills h1 {
+		margin-bottom: 0px !important;
+	}
+	#interests #toTop {
+		margin-top: 50px !important;
+	}
+}
+	
+/* iPhone 6+/6s+/7+/8+ */
+@media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) { 
+
+}
+
 .job-role {
 	margin-top: -23px;
 	display: flex;
 	justify-content: center;
-	font-size: 1.6em;
+	font-size: 1.7em;
 	font-weight: bold;
 	z-index: 99999999;
 	position: relative;
@@ -414,22 +495,46 @@ section {
 }
 .job .jobt {
 	font-size: 1.2em;
-	color: #eee6ab;
+	color: #c572ff;
+	margin-bottom: 10px;
 }
 .job .company {
-	font-size: 1.3em;
-	color: #461da5;
+    font-size: 1.1em;
+    color: #c6c0d5;
+    line-height: 1.1em;
 }
+.job::after {
+    content: '';
+    width: 250px;
+    height: 2px;
+    background: #320751;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
 .job .dates {
 	font-size: 1em;
 }
 .qualification {
-	margin: 60px 50px;
+	line-height: 1.2em;
+    margin-bottom: 30px;
+	margin-left: 28px;
+    margin-top: 40px;
 	color: #c5bc8e;
 }
 .qualification .qual {
 	font-size: 1.2em;
-	color: #eee6ab;
+    color: #eee6ab;
+    line-height: 1.2em;
+}
+.qual span {
+	font-size: .55em;
+    margin-left: 7px;
+    display: inline-block;
+    background: #371559;
+    border-radius: 20px;
+    padding: 0 8px;
 }
 .qualification .institute, .qualification .dates {
 	margin-top: 10px;
@@ -483,11 +588,12 @@ section {
 	.interest {
 		margin: 0 0 10px 0;    
 		width: 140px;
-		height: 140px;
+		height: 130px;
 	}
 	
 	.interest p {
 		font-size: 1.2em;
+		margin-top: 15px;
 	}
 	
 	#interests h1 {
@@ -505,5 +611,8 @@ section {
 		left: 0;
 		right: 0;
 		margin: 10px auto;
+	}
+	#employment .downArrow { 
+		top: 75vh 
 	}
 }
