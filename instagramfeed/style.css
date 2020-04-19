@@ -17,7 +17,6 @@
 	margin-top: 0;
 	margin-bottom: 15px;
 	text-decoration: none;
-	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -130,7 +129,7 @@
 	#titleSection h2 {
 		margin-bottom: 0;
 		line-height: 1.2em;
-		padding: 0 40px;
+		padding: 0 45px;
 	}
 	#titleSection a {
 		font-size: 1em;
@@ -146,4 +145,10 @@
 		margin-top: 33px;
 		font-size: 1.12em;
 	}
+}
+
+@media all and (min-width: 415px) and (max-width: 530px) {
+	#titleSection h2 {
+    padding: 0 80px;
+  }
 }
