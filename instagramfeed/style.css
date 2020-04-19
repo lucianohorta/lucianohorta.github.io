@@ -1,3 +1,72 @@
+/* ----------- HEADER: --------------- */
+
+#titleSection {
+	text-align: center;	
+	margin-bottom: 40px;
+	font-family: 'Nunito', sans-serif;
+}
+
+#titleSection h2{
+    display: flex;
+    justify-content: center;
+	margin-bottom: 0px;
+}
+
+#subtitle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+#subtitle img {
+    border-radius: 90px;
+    transform: scale(.7);
+}
+
+.stripe {
+    color: #1c54ac8f;
+    line-height: 1.4;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+	align-self: center;
+}
+
+.stripe::after {
+    content: 'Follow me!!!';
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1.4;
+    display: block;
+    color: #460646;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 1s ease-out width;
+}
+
+.stripe a {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;   
+    color: #430973;
+}
+
+.stripe a:hover {
+    color: #9b3838;
+}
+
+.stripe:hover:after {
+    width: 100%;
+}
+
+
+/* ----------- IMAGE ITEMS: --------------- */
+
 .instaItem {
     float: left;
     display: block;
@@ -20,4 +89,26 @@
     content: "";
     display: block;
     padding-top: 100%;
+}
+
+
+@media all and (max-width: 480px) {
+	.instaItem {
+		margin-left: 2%;
+		margin-right: 2%;
+		width: 46%;
+	}
+	#titleSection {
+		font-size: .9em;
+	}
+	#titleSection h2 {
+		margin-bottom: -20px;	
+	}
+	#subtitle {
+		margin-left: -15%;
+	}
+	#subtitle img {
+		transform: scale(.5);	
+		margin-right: -20px;
+	}
 }
