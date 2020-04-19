@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
 	margin-bottom: 0px;
+	color: #3b1759;
 }
 
 #titleSection a {
-	margin-top: 5px;
-	margin-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 15px;
 	text-decoration: none;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -30,46 +31,48 @@
 #subtitle img {
     border-radius: 90px;
     transform: scale(.7);
+	max-height: 150px;
 }
 
-.stripe {
-    color: #1c54ac8f;
+#followme {
+    color: #d5af8f;
     line-height: 1.4;
     position: relative;
     display: block;
+	margin-top: 30px;
     white-space: nowrap;
     font-weight: bold;
     cursor: pointer;
 	align-self: center;
 }
 
-.stripe::after {
-    content: 'Follow me!!!';
+#followme::after {
+    content: 'Follow me!!!!!';
     position: absolute;
     left: 0;
     top: 0;
     line-height: 1.4;
     display: block;
-    color: #460646;
+    color: #c48e5f;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
     transition: 1s ease-out width;
 }
 
-.stripe a {
+#followme a {
     display: flex;
     font-family: 'Nunito', sans-serif;
     text-decoration: none;   
-    color: #430973;
+    color: #3b1759;
 }
 
-.stripe a:hover {
-    color: #9b3838;
+#followme a:hover {
+    color: #c48e5f;
 }
 
-.stripe:hover:after {
-    width: 100%;
+#followme:hover:after {
+    width: 120%;
 }
 
 
@@ -125,7 +128,12 @@
 		font-size: .9em;
 	}
 	#titleSection h2 {
-		margin-bottom: -20px;	
+		margin-bottom: 0;
+		line-height: 1.2em;
+		padding: 0 40px;
+	}
+	#titleSection a {
+		font-size: 1em;
 	}
 	#subtitle {
 		margin-left: -15%;
@@ -133,5 +141,9 @@
 	#subtitle img {
 		transform: scale(.5);	
 		margin-right: -20px;
+	}
+	#followme {
+		margin-top: 33px;
+		font-size: 1.12em;
 	}
 }
