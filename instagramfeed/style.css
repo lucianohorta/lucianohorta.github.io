@@ -1,0 +1,23 @@
+.instaItem {
+    float: left;
+    display: block;
+    margin-right: 1.16%;
+    width: 32%;
+	margin-bottom: 10px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.instaItem a {
+    display: block;
+    line-height: 0;
+    font-size: 0;
+}
+
+.instaItem a::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}

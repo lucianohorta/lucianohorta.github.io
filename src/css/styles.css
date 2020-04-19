@@ -58,7 +58,7 @@ header {
 		text-align: center;
 		padding-top: 0;
 		padding-bottom: 60px;
-		margin-top: -30px !important;
+		/* margin-top: -30px !important; */
 	}
 	.downArrow {
 		top: 36vh !important;
@@ -317,7 +317,7 @@ h1 .fa {
 		font-size: 1.1em;
 	}
 	.info a {
-		border: 2px solid #1c1c55;
+		border: 4px solid #21214e;
 		padding: 106px 0;
 		border-radius: 200px;
 	}
