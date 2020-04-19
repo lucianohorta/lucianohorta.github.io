@@ -79,6 +79,15 @@
 	overflow: hidden;
 }
 
+@media all and (min-width: 768px) {
+	.instaItem {
+		margin-left: .5%;
+		margin-right: .5%;
+		width: 24%;
+		margin-bottom: 1%;
+	}	
+}
+
 .instaItem a {
     display: block;
     line-height: 0;
