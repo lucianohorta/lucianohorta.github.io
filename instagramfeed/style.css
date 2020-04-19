@@ -12,6 +12,14 @@
 	margin-bottom: 0px;
 }
 
+#titleSection a {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
 #subtitle {
     display: flex;
     justify-content: center;
@@ -86,6 +94,12 @@
 		width: 24%;
 		margin-bottom: 1%;
 	}	
+	#titleSection h2 {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0px;
+		font-size: 2em;
+	}
 }
 
 .instaItem a {
