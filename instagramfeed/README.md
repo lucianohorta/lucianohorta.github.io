@@ -5,7 +5,7 @@
 
 
 
-### Change it in _instagramfeedinit.js_ and you're ready to rock! :metal:
+### Change it in _instagramfeedinit.js (line 37)_ and you're ready to rock! :metal:
 
 ### No more Token!    :relieved: :unlock: :key:
 
