@@ -29,7 +29,7 @@ header {
 	width: 100%;
 	height: 100px;
 	position: fixed;
-	top: 0;
+	top: -7px;
 	background-color: #060018;
 	color: #eee6ab;
 }
@@ -167,7 +167,6 @@ h1 {
 #interests #toTop::before {
     content: '^';
     display: block;
-    font-weight: bold;
     font-size: 1.7em;
     position: absolute;
     top: 2px;
@@ -197,6 +196,11 @@ h1 {
 	#employment h1, #interests h1 {
 		margin: 20px;
 	}
+}
+.interestlist a:hover {
+	background: #32052f;
+    border-color: rebeccapurple;
+    text-decoration: none;
 }
 #employment h1 p, 
 #interests h1 p, 
@@ -416,6 +420,8 @@ h1 .fa {
 		filter: brightness(1.95);
 	}
 }
+
+
 section {
 	position: relative;
 }
@@ -733,4 +739,104 @@ section {
 		margin-top: 90px;
 	}
 
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+	.info a, .info div {
+		min-width: unset;
+	}
+	.info a {
+		padding: 40px 90px;
+		border: 3px solid #21214e;
+		width: 150px;
+		margin-left: 65px;
+		margin-bottom: -40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.info div {
+		width: 130px;
+		display: inline-block;
+	}
+	.personal-data .row .col-md-6 {
+		margin-right: -40px !important;
+		margin-left: -40px !important;
+	}
+	#skills .skillstitle {
+		margin-top: -48px;
+	}
+	.skill {
+		max-height: 28px;
+	}
+	.skilllist {
+		max-width: 500px !important;
+	}
+	#skills .skillstitle {
+		margin-top: -181px;
+		margin-bottom: -25px;
+	}
+	#interests {
+		margin-top: -5px
+	}
+	#interests h1 {
+		margin: 0;
+		margin-top: -7px;
+	}
+	.interestlist {
+		margin: 10px auto;
+	}
+	.interest {
+		margin: 10px;
+		padding: 0;
+		width: 200px;
+		height: 190px;
+		border-radius: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#employment {
+		margin-top: -18px;
+	}
+	#employment .downArrow {
+		top: 83vh;
+	}
+	.job {
+		margin-top: 30px;
+	}
+	.job::after {
+		margin-top: 20px;
+	}
+	.downArrow {
+		left: 30px;
+	}
+	.qualification {
+		margin-top: 60px;
+	}
+	.personal-data {
+		margin-top: 30px;
+	}
+	.content > .downArrow:nth-of-type(1) {
+		top: 35vh;
+		left: 0;
+	}
+}
+
+@media all and (min-width: 1790px) {
+	.personal-data .row .col-md-6 {
+		flex: 0 0 30%;
+		max-width: 50%;
+		margin-right: 10px !important;
+		margin-left: 10px !important;
+		margin-bottom: -50px !important;
+	}
+	.info a {
+		height: 314px;
+	}
+	.fa-2x {
+		font-size: 5em;
+		margin-top: -20px;
+	}
 }
