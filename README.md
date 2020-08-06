@@ -1,2 +1,2 @@
-# luckzzz.github.io
+# lucianohorta.github.io
 Luciano Horta - CV
