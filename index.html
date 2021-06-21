@@ -175,25 +175,25 @@
             <div class="jobt">Sr. Front-End Developer</div>
             <div class="company">Corebiz</div>
             <div class="companysite"> <a href="//www.corebiz.ag/pt/">corebiz.ag/pt/</a></div>
-            <div class="dates">From Ago/2020 - To ...</div>
+            <div class="dates">Ago/2020 - ...</div>
           </div>
           <div class="job" data-1200="opacity:0" data-1300="opacity:1">
             <div class="jobt">Sr. Front-End Developer</div>
             <div class="company">Agência e-Can</div>
             <div class="companysite"> <a href="//www.agenciaecan.com.br">agenciaecan.com.br</a></div>
-            <div class="dates">From Out/2019 - To Jul/2020</div>
+            <div class="dates">Out/2019 - Jul/2020</div>
           </div>
           <div class="job" data-1300="opacity:0" data-1400="opacity:1">
             <div class="jobt">Jr. Front-End Developer</div>
             <div class="company">OKulos</div>
             <div class="companysite"> <a href="//www.okulos.com.br">okulos.com.br</a></div>
-            <div class="dates">From Jan/2019 - To Out/2019</div>
+            <div class="dates">Jan/2019 - Out/2019</div>
           </div>
           <div class="job" data-1400="opacity:0" data-1600="opacity:1">
             <div class="jobt">Jr. Front-End Developer</div>
             <div class="company">Conceito Comunicação</div>
             <div class="companysite"> <a href="https://conceito-online.com.br/">conceito-online.com.br</a></div>
-            <div class="dates">From Out/2017 - To Dez/2018</div>
+            <div class="dates">Out/2017 - Dez/2018</div>
           </div>
           <div class="job" data-1600="opacity:0" data-1800="opacity:1">
             <div class="jobt">Trainee (Help desk)</div>
@@ -294,8 +294,16 @@
       $(document).ready(function(){
         $('.jobs-slick').slick({
           infinite: false,
-          slidesToShow: 4,
-          slidesToScroll: 4
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          mobileFirst: true,
+          responsive: [{
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 4
+            }
+          }]
         });
       });
     </script>

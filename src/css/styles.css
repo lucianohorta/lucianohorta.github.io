@@ -317,10 +317,10 @@ h1 {
 	}
 }
 @media (min-width: 409px) and (max-width: 414px) { /* phablets */
-	.job {
+	/*.job {
 		margin-top: 30px !important;
 		margin-left: 60px !important;
-	}
+	}*/
 	.qualification {
 		margin-left: 48px !important;
 	}
@@ -522,6 +522,12 @@ section {
 	.content > .downArrow:nth-of-type(1) {
 		top: 70vh !important;
 	}
+	.leftArrow {
+		top: 40vh;
+	}
+	.job {
+		font-size: .95em;
+	}
 	.info {
 		margin: 15px 0;
 		padding: 0;
@@ -533,6 +539,12 @@ section {
 	}
 	.personal-data .row {
 		width: 100%;
+	}
+	.companysite a {
+		font-size: .85em;
+		line-height: 2em;
+		margin-bottom: 30px;
+		display: block;
 	}
 }
 
@@ -589,12 +601,21 @@ section {
 	/* color: #13014a; */
 	color: #d5a1f9;
 }
+
 @media (min-width: 768px) {
 	.skill .skillname {
 		padding: 8px;
 		padding-right: 22px;
+		padding-top: 2px;
 	}
 }
+
+@media (min-width: 1920px) {
+	.skill .skillname {
+		padding-top: 8px;
+	}
+}
+
 .job {
 	margin-left: 50px;
 	color: #d3a89c;
@@ -622,11 +643,13 @@ section {
 	font-size: 1.2em;
 	color: #c572ff;
 	margin-bottom: 10px;
+	line-height: 1.2em;
 }
 .job .company {
     font-size: 1.1em;
     color: #c6c0d5;
     line-height: 1.1em;
+	white-space: nowrap;
 }
 .job::after {
     content: '';
