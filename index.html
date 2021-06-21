@@ -41,6 +41,8 @@
 
     <!-- Styles.css -->
     <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="src/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="src/css/slick-theme.css"/>
   </head>
 
   <!-- Bootstrap CSS -->
@@ -163,24 +165,42 @@
       <section id="employment" data-1100="top:100%; background-color: rgb(31, 3, 124)" data-1800="top:0%; background-color: rgb(8, 4, 21)">
         <h1><i class="fa fa-briefcase fa-fw"></i>
           <p>Employment</p>
+          <a href="#leftarrow" class="leftArrow">
+            <span></span>
+          </a>
         </h1>
-        <div class="job" data-1100="opacity:0.5" data-1300="opacity:1">
-          <div class="jobt">Sr. Front-End Developer</div>
-          <div class="company">e-Can Digital Performance </div>
-          <div class="companysite"> <a href="//www.agenciaecan.com.br">agenciaecan.com.br</a></div>
-          <div class="dates">From Nov/2019 - To ...</div>
-        </div>
-        <div class="job" data-1300="opacity:0" data-1600="opacity:1">
-          <div class="jobt">Sr. Front-End Developer</div>
-          <div class="company">OKulos</div>
-          <div class="companysite"> <a href="//www.okulos.com.br">okulos.com.br</a></div>
-          <div class="dates">From Fev/2019 - To Nov/2019</div>
-        </div>
-        <div class="job" data-1600="opacity:0" data-1800="opacity:1">
-          <div class="jobt">Jr. Front-End Developer</div>
-          <div class="company">Total Control</div>
-          <div class="companysite"> <a href="//www.totalcontrol.com.br">totalcontrol.com.br</a></div>
-          <div class="dates">From Fev/2019 - To Nov/2019</div>
+
+        <div class="jobs-slick"> <!-- slick slider container-->
+          <div class="job" data-1100="opacity:0.5" data-1200="opacity:1">
+            <div class="jobt">Sr. Front-End Developer</div>
+            <div class="company">Corebiz</div>
+            <div class="companysite"> <a href="//www.corebiz.ag/pt/">corebiz.ag/pt/</a></div>
+            <div class="dates">From Ago/2020 - To ...</div>
+          </div>
+          <div class="job" data-1200="opacity:0" data-1300="opacity:1">
+            <div class="jobt">Sr. Front-End Developer</div>
+            <div class="company">Agência e-Can</div>
+            <div class="companysite"> <a href="//www.agenciaecan.com.br">agenciaecan.com.br</a></div>
+            <div class="dates">From Out/2019 - To Jul/2020</div>
+          </div>
+          <div class="job" data-1300="opacity:0" data-1400="opacity:1">
+            <div class="jobt">Jr. Front-End Developer</div>
+            <div class="company">OKulos</div>
+            <div class="companysite"> <a href="//www.okulos.com.br">okulos.com.br</a></div>
+            <div class="dates">From Jan/2019 - To Out/2019</div>
+          </div>
+          <div class="job" data-1400="opacity:0" data-1600="opacity:1">
+            <div class="jobt">Jr. Front-End Developer</div>
+            <div class="company">Conceito Comunicação</div>
+            <div class="companysite"> <a href="https://conceito-online.com.br/">conceito-online.com.br</a></div>
+            <div class="dates">From Out/2017 - To Dez/2018</div>
+          </div>
+          <div class="job" data-1600="opacity:0" data-1800="opacity:1">
+            <div class="jobt">Trainee (Help desk)</div>
+            <div class="company">Total Control</div>
+            <div class="companysite"> <a href="//www.totalcontrol.com.br">totalcontrol.com.br</a></div>
+            <div class="dates">2016/2017</div>
+          </div>
         </div>
 
         <a href="#education" class="downArrow">
@@ -260,10 +280,23 @@
     <script src="src/js/main.js"></script>
     <script src="src/js/skrollr.min.js" type="text/javascript"></script>
 
-    <!-- skrollr init --> 
+    <!-- skrollr init: --> 
     <script type="text/javascript">
       var s = skrollr.init({
         scale: 1.1
+      });
+    </script>
+
+    <!-- SLICK SLIDER: -->
+    <script type="text/javascript" src="src/js/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.jobs-slick').slick({
+          infinite: false,
+          slidesToShow: 4,
+          slidesToScroll: 4
+        });
       });
     </script>
 
