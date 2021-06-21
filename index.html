@@ -292,10 +292,11 @@
 
     <script type="text/javascript">
       $(document).ready(function(){
+
         $('.jobs-slick').slick({
           infinite: false,
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           mobileFirst: true,
           responsive: [{
             breakpoint: 768,
@@ -305,6 +306,17 @@
             }
           }]
         });
+
+        $('.jobs-slick').on('afterChange', function(event, slick, currentSlide) {
+          console.log(slick, currentSlide);
+          if (slick.$slides.length-1 == currentSlide) {
+            console.log("Last slide");
+            $(".leftArrow").css("transform","rotate(90deg)");
+          } else {
+            $(".leftArrow").css("transform","rotate(270deg)");
+          }
+        })
+
       });
     </script>
 

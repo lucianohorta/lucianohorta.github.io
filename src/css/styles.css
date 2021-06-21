@@ -504,6 +504,12 @@ section {
 	box-sizing: border-box;
 }
 
+.leftArrow:nth-of-type(2) {
+	transform: rotate(90deg);
+	right: 20%;
+	top: 43.6vh;
+}
+
 .content > .downArrow:nth-of-type(1) {
 	/* top: 40vh; */
 	top: 80vh;
