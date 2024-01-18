@@ -509,6 +509,12 @@ section {
     }
 }
 
+@media all and (min-width: 375px) and (max-width: 480px) {
+    .interest {
+        padding: 28px;
+    }
+}
+
 
 
 
